@@ -28,15 +28,14 @@ goal = Goal.with_variables(lambda x, y:
     multiply(
         x,
         y,
-        peano.to_peano(24)                                  # encode 24 in peano's arithmetics
-    )
-)
+        peano.to_peano(24)))                               # encode 24 in peano's arithmetics
 states = goal.pursue_in(empty_state)
-states = itertools.islice(filter(None, states), 8)          # take 8 states only
+
+states = itertools.islice(filter(None, states), 8)         # take 8 states only
 
 # Print the results
 for state in states:
-    print(list(map(peano.from_peano, state.results(2))))    # map x and y from peano to decimal
+    print(list(map(peano.from_peano, state.results(2))))   # map x and y from peano to decimal
 ```
 
 **Output:**
