@@ -63,10 +63,7 @@ class State:
         if key in self.values.keys():
             return self.value_of(self.values[key])
         elif isinstance(key, Pair):
-            pair = Pair(
-                self.value_of(key.left),
-                self.value_of(key.right)
-            )
+            pair = Pair(self.value_of(key.left), self.value_of(key.right))
             return pair
         else:
             return key
@@ -164,10 +161,7 @@ def append(a, b, c):
                     Goal.equal(a, Pair(first, rest_of_a)),
                     Goal.equal(c, Pair(first, rest_of_c))
                 ),
-                append(rest_of_a, b, rest_of_c)
-            )
-        )
-    )
+                append(rest_of_a, b, rest_of_c))))
 
 
 def add(x, y, z):
@@ -182,10 +176,7 @@ def add(x, y, z):
                     Goal.equal(x, Pair(peano.SUCCESSOR, smaller_x)),
                     Goal.equal(z, Pair(peano.SUCCESSOR, smaller_z))
                 ),
-                add(smaller_x, y, smaller_z)
-            )
-        )
-    )
+                add(smaller_x, y, smaller_z))))
 
 
 def multiply(x, y, z):
@@ -200,8 +191,5 @@ def multiply(x, y, z):
                     Goal.equal(x, Pair(peano.SUCCESSOR, smaller_x)),
                     add(smaller_z, y, z)
                 ),
-                multiply(smaller_x, y, smaller_z)
-            )
-        )
-    )
+                multiply(smaller_x, y, smaller_z))))
 

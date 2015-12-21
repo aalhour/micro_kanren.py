@@ -8,9 +8,7 @@ from collections import namedtuple
 #        x.left     # = 1
 #        x.right    # = 2
 Pair = namedtuple("Pair", "left right")
-Pair.__str__ =          \
-    lambda self:        \
-        "({}, {})".format(self.left, self.right if self.right != Sequence.EMPTY else "*")
+Pair.__str__ = lambda self: "({}, {})".format(self.left, self.right if self.right != Sequence.EMPTY else "*")
 
 
 class Sequence:
