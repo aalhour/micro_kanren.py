@@ -225,6 +225,7 @@ goal = Goal.with_variables(lambda x, y:
         peano.to_peano(24)
     )
 )
+print(EMPTY_STATE)
 states = goal.pursue_in(EMPTY_STATE)
 states = itertools.islice(filter(None, states), 8)
 for state in states:
