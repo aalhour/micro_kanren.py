@@ -2,18 +2,14 @@ from itertools import chain
 from collections import namedtuple
 
 
-#####
-# The Pair Named-Tuple
-# Usage: x = Pair(1, 2)
-#        x.left     # = 1
-#        x.right    # = 2
-Pair = namedtuple("Pair", "left right")
-Pair.__str__ = lambda self: "({}, {})".format(self.left, self.right if self.right != Sequence.EMPTY else "*")
+class Pair(namedtuple('Pair', ('left', 'right'))):
+    '''Pair is a named-tuple subclass that can be converted to string'''
+    def __str__(self):
+        return "({}, {})".format(self.left, self.right if self.right != Sequence.EMPTY else "*")
 
 
 class Sequence:
     '''Defines operations on sequences of pairs'''
-
     # A constant that denotes the end of a sequence
     EMPTY = object()
 
