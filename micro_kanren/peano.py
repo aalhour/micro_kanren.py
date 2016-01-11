@@ -1,4 +1,5 @@
 from micro_kanren.sequence import Pair
+from micro_kanren.helpers import memoized
 
 
 #####
@@ -7,6 +8,7 @@ from micro_kanren.sequence import Pair
 ZERO, SUCCESSOR = [object() for i in range(2)]
 
 
+@memoized
 def from_integer(integer):
     global ZERO
     global SUCCESSOR
@@ -17,6 +19,7 @@ def from_integer(integer):
         return Pair(SUCCESSOR, from_integer(integer - 1))
 
 
+@memoized
 def to_integer(peano):
     global ZERO
 

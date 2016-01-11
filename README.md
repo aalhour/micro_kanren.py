@@ -1,8 +1,13 @@
 # micro_kanren
 
-This is a Python 3 port of [Tom Stuart's Ruby implementation of μKanren](https://github.com/tomstuart/kanren).
+micro_kanren, or as it's more formally known as [μKanren](http://webyrd.net/scheme-2013/papers/HemannMuKanren2013.pdf), is a declarative-relational programming language, that was originally presented in the book [The Reasoned Schemer](http://www.amazon.com/dp/0262562146). You would solve a problem by declaring it as a Goal that consists of relations between variables and states.
 
-In a nutshell, [μKanren](http://webyrd.net/scheme-2013/papers/HemannMuKanren2013.pdf) is a declarative language for relational programming. Tom Stuart talked very concisely about this paradigm in his talk [Hello, Declarative World!](https://skillsmatter.com/skillscasts/6523-hello-declarative-world) and its accompanying [article](http://codon.com/hello-declarative-world).
+This is a Python 3 port of [Tom Stuart's μKanren](https://github.com/tomstuart/kanren) implementation in Ruby.
+
+
+## Motivation:
+
+Tom Stuart talked very concisely about this paradigm in his talk [Hello, Declarative World!](https://skillsmatter.com/skillscasts/6523-hello-declarative-world) and its accompanying [article](http://codon.com/hello-declarative-world).
 
 If you find it difficult to play around with this library, then I urge you to watch Tom's video as it builds up a set of interesting ideas from simple constructs. If you're feeling adventurous, then head over to **examples/**, and try to build on them.
 
@@ -59,3 +64,4 @@ Numbers in this microKanren implementation are encoded using Peano's arithmetic 
 This project was developed on OSX 10 and using Python 3.5.1, I haven't debugged it on other platforms. This is for educational purposes only. If you find any bugs or other problems with the code or even would like to contribute, please open an issue.
 
 Happy coding!
+

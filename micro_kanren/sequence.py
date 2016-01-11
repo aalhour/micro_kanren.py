@@ -4,8 +4,9 @@ from collections import namedtuple
 
 class Pair(namedtuple('Pair', ('left', 'right'))):
     '''Pair is a named-tuple subclass that can be converted to string'''
-    def __str__(self):
+    def __repr__(self):
         return "({}, {})".format(self.left, self.right if self.right != Sequence.EMPTY else "*")
+
 
 
 class Sequence:
