@@ -1,4 +1,4 @@
-# micro_kanren
+# micro_kanren.py
 
 micro_kanren, or as it's more formally known as [μKanren](http://webyrd.net/scheme-2013/papers/HemannMuKanren2013.pdf), is a declarative-relational programming language, that was originally presented in the book [The Reasoned Schemer](http://www.amazon.com/dp/0262562146). You would solve a problem by declaring it as a Goal that consists of relations between variables and states.
 
