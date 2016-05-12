@@ -1,4 +1,4 @@
-# μKanren.py
+# micro_kanren.py
 
 μKanren (MuKanren), which is also known as [microKanren](papers/Hemann_MuKanren_2013.pdf), is a declarative-relational programming language, that was originally presented in the book [The Reasoned Schemer](http://www.amazon.com/dp/0262562146). In microKanren You would solve a problem by declaring it as an end goal Goal that consists of relations between variables and states, and then you let microKanren handle how to solve it.
 
