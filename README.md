@@ -1,6 +1,6 @@
-# micro_kanren.py
+# μKanren.py
 
-micro_kanren, or as it's more formally known as [μKanren](http://webyrd.net/scheme-2013/papers/HemannMuKanren2013.pdf), is a declarative-relational programming language, that was originally presented in the book [The Reasoned Schemer](http://www.amazon.com/dp/0262562146). You would solve a problem by declaring it as a Goal that consists of relations between variables and states.
+μKanren (MuKanren), which is also known as [microKanren](papers/Hemann_MuKanren_2013.pdf), is a declarative-relational programming language, that was originally presented in the book [The Reasoned Schemer](http://www.amazon.com/dp/0262562146). In microKanren You would solve a problem by declaring it as an end goal Goal that consists of relations between variables and states, and then you let microKanren handle how to solve it.
 
 This is a Python 3 port of [Tom Stuart's μKanren](https://github.com/tomstuart/kanren) implementation in Ruby.
 
@@ -56,7 +56,7 @@ for state in states:
 [24, 1]
 ```
 
-Numbers in this microKanren implementation are encoded using Peano's arithmetic (see: [peano module](micro_kanren/peano.py)) when supplied to Goals and then decoded when returned as outputs.
+Numbers in this microKanren implementation are encoded using Peano's arithmetic (see: [peano module](μKanren/peano.py)) when supplied to Goals and then decoded when returned as outputs.
 
 
 ## Notes:
